@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0"
+                 xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
+                 xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+
+	<Metadata>
+		<Identity Id="AriakeDarkTheme.d48a64cb-98ed-4144-b364-996dd84f2605"
+				  Version="1.0"
+				  Language="en-US"
+				  Publisher="Naki" />
+
+		<DisplayName>Ariake Dark</DisplayName>
+
+		<Description>
+			Ariake Dark is a modern dark theme inspired by the Ariake color palette, designed for long coding sessions in Visual Studio 2022.
+		</Description>
+
+		<Icon>AriakeDark.png</Icon>
+		<Tags>theme,dark,visual studio,color scheme</Tags>
+	</Metadata>
+
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
+			<ProductArchitecture>amd64</ProductArchitecture>
+		</InstallationTarget>
+	</Installation>
+
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP"
+					DisplayName="Microsoft .NET Framework"
+					d:Source="Manual"
+					Version="[4.5,)" />
+	</Dependencies>
+
+	<Prerequisites>
+		<Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor"
+					  Version="[17.0, )"
+					  DisplayName="Visual Studio core editor" />
+	</Prerequisites>
+
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="AriakeDark.pkgdef" />
+	</Assets>
+
+</PackageManifest>
