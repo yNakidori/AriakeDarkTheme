@@ -57,4 +57,4 @@ The theme is distributed as a Visual Studio extension using a `.pkgdef` file.
 If you want to modify or build the theme yourself:
 
 ```bash
-git clone ...
+git clone https://github.com/yNakidori/AriakeDarkTheme.git
